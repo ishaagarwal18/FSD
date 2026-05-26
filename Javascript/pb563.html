@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const student=[
+            {name:"Isha",FSD: 85},
+            {name:"Mehrin",FSD: "abc"},
+            {name:"Princess",FSD: 92},
+        ];
+        let summary=[];
+        function gradestudent(student){
+            for(let s of student){
+                let marks = prompt(`Enter FSD marks for ${s.name}:`);
+                if(marks==""||isNaN(marks))
+            {
+                alert("Invalid grade. Please enter a number.")
+                continue;
+            }
+            else{
+                s.FSD=Number(marks)
+                summary=summary+ `${s.name}: ${s.FSD}\n`;
+            }
+            }
+            alert(summary)
+        }
+        gradestudent(student)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

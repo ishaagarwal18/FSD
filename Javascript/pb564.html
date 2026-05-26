@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function registerUser(){
+            let username="";
+            while (username === "" || username === null || username === undefined) {
+            username = prompt("Enter username:");
+            }
+            
+            let password="";
+            while (password === undefined || password === null || password.length < 8) {
+            password = prompt("Enter password (minimum 8 characters):");
+            }
+
+            let confirmmessage=confirm("Are you sure you want to register with this username and password?");
+            if(confirmmessage){
+                alert(`Successsful registration 
+Username : ${username}
+password : ${password}`);
+            }
+            else{
+                alert("Registration cancelled");
+                return;
+            }
+        }
+        registerUser()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
