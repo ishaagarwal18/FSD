@@ -1,0 +1,2 @@
+write file
+append fileappend fileappend fileappend file
