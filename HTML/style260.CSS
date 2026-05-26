@@ -1,0 +1,15 @@
+table, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Odd rows → Yellow */
+tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+/* Even rows → Green */
+tr:nth-child(even) {
+    background-color: lightgreen;
+}
