@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hover Sections</title>
+<style>
+    /* GLOBAL CSS VARIABLES */
+:root {
+    --section-height: 20vh;
+    --section-bg: #f1f1f1;
+    --hover-border: 3px solid red;
+    --title-color: black;
+    --title-hover-color: red;
+    --para-hover-indent: 2cm;
+    --para-hover-transform: capitalize;
+    --transition-time: 0.4s; 
+}
+
+/* GENERAL SECTION STYLE */
+section {
+    width: 100%;
+    height: var(--section-height);
+    background: var(--section-bg);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: var(--transition-time);
+}
+
+/* SECTION HOVER → RED BORDER */
+section:hover {
+    border: var(--hover-border);
+}
+
+/* TITLES */
+section h2 {
+    color: var(--title-color);
+    transition: var(--transition-time);
+}
+
+/* HOVER TITLE → RED */
+section h2:hover {
+    color: var(--title-hover-color);
+}
+
+/* PARAGRAPHS */
+section p {
+    transition: var(--transition-time);
+}
+
+/* HOVER PARAGRAPH → 2cm INDENT + CAPITALIZE */
+section p:hover {
+    text-indent: var(--para-hover-indent);
+    text-transform: var(--para-hover-transform);
+}
+
+</style>
+</head>
+<body>
+
+<section>
+    <h2>Section One</h2>
+    <p>this is the first paragraph content.</p>
+</section>
+
+<section>
+    <h2>Section Two</h2>
+    <p>this is the second paragraph content.</p>
+</section>
+
+<section>
+    <h2>Section Three</h2>
+    <p>this is the third paragraph content.</p>
+</section>
+
+</body>
+</html>

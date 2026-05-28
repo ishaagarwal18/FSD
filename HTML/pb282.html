@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    /* border: 2px solid black; */
+}
+
+/* Each product column */
+.product {
+    width: 30%;
+    text-align: center;
+}
+
+/* All images same height + full width */
+.product img {
+    width: 100%;
+    height: 250px;     /* uniform height */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Product name */
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+</style>
+</head>
+<body>
+
+<div class="product-grid">
+
+    <div class="product">
+        <img src="flower.jpg" alt="Smartwatch 1">
+        <h3>Smartwatch Pro X</h3>
+    </div>
+
+    <div class="product">
+        <img src="marvel.jpg" alt="Smartwatch 2">
+        <h3>Smartwatch Lite S</h3>
+    </div>
+
+    <div class="product">
+        <img src="laddu.jpeg" alt="Smartwatch 3">
+        <h3>Smartwatch Ultra Z</h3>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+Write a JS to handle following mouse events:
+    1. If mouse over heading it should turn yellow
+    2. If mouse goes out then heading should turn black
+    3. If button named find time is clicked then should date and time info. on the same page
+    4. If button named red is clicked bg of webpage should turn red and button named green is clicked 
+        then webpage should turn green
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h2 onmouseover="fun1(this)" onmouseout="fun2(this)">Hello Bubuu.....</h2>
+    <button onclick="time()">Find Time</button>
+    <p id="demo"></p>
+    <button onclick="document.getElementById('body').style.backgroundColor='red'">Red</button>
+    <button onclick="document.getElementById('body').style.backgroundColor='green'">green</button>
+    <script>
+        function time(){
+            let a=new Date()
+            document.getElementById("demo").innerHTML=a
+        }
+        function fun1(x){
+            x.style.color="yellow"
+        }
+        function fun2(x){
+            x.style.color="black"
+        } 
+    </script>
+</body>
+</html>

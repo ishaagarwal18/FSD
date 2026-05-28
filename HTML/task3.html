@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{background-color: aqua;}
+        input[type="password"]{background-color: aqua;width: 50px;height: 50px;}
+        input[type="submit"]{background-color: rgb(243, 116, 116);}
+        input[type="text"]:focus{background-color: rgb(116, 219, 176);
+            transition-timing-function:ease;transition-duration: 3s;}
+        input[type="password"]:focus{height: 100px;width: 100px;
+            transition-timing-function:ease;transition-property: height,width;transition-duration: 3s;}
+        input[type="submit"]:hover{background-color: rgb(110, 110, 235); 
+            transition-timing-function: ease;transition-duration: 3s;}
+    </style>
+</head> 
+<body>
+    <form>
+        <input type="text" name="Name">Name<br/><br/>
+        <input type="password" name="pass">Password<br/><br/>
+        <input type="submit">
+    </form>
+</body>
+</html>

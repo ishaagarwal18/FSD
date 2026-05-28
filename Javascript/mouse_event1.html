@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" onmousedown="mdown()">test</p>
+    <p onmouseup="mup(this)">paper</p>
+    <p style="color: aqua;" onmouseover="this.style.color='red'; this.innerHTML='changed'">FSD</p>
+    <div onmouseover="mover(this)" onmouseout="mout(this)">Mouse Events</div>
+    <script>
+        function mdown(){
+            document.getElementById("demo").innerHTML="mouse down"
+        }
+        function mup(x){
+            x.innerHTML="mouse up"
+        }
+        function mover(x){
+            x.innerHTML="Welcome"
+            x.style.backgroundColor="lightblue"
+        }
+        function mout(x){
+            x.innerHTML="Goodbye"
+            x.style.backgroundColor="lightgreen"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Tables</title>
+    <style>
+        .tables-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .table1 {
+            background-color: blue;
+            color: white;
+        }
+
+        .table2 {
+            background-color: green;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            table {
+                width: 100%;
+            }
+        }
+
+        @media (orientation: portrait) {
+            .table1 {
+                background-color: green;
+            }
+
+            .table2 {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="tables-wrapper">
+
+    <table class="table1">
+        <tr>
+            <td>T1 R1 C1</td><td>T1 R1 C2</td><td>T1 R1 C3</td>
+        </tr>
+        <tr>
+            <td>T1 R2 C1</td><td>T1 R2 C2</td><td>T1 R2 C3</td>
+        </tr>
+        <tr>
+            <td>T1 R3 C1</td><td>T1 R3 C2</td><td>T1 R3 C3</td>
+        </tr>
+    </table>
+
+    <table class="table2">
+        <tr>
+            <td>T2 R1 C1</td><td>T2 R1 C2</td><td>T2 R1 C3</td>
+        </tr>
+        <tr>
+            <td>T2 R2 C1</td><td>T2 R2 C2</td><td>T2 R2 C3</td>
+        </tr>
+        <tr>
+            <td>T2 R3 C1</td><td>T2 R3 C2</td><td>T2 R3 C3</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

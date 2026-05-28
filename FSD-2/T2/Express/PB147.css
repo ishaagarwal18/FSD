@@ -1,0 +1,12 @@
+h1{
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

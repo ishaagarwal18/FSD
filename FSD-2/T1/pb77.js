@@ -1,0 +1,24 @@
+// Write a Node.js program to CRUD operation of file management. 
+// 1)Create folder named "Hello". 
+// 2) Create file in it named abc.txt and enter data in to it. 
+// 3) Add more data at last in file. 
+// 4) Read data without getting buffer data at first. 
+// 5) rename file 
+// 6) Delete both file and folder.
+
+
+var fs = require("fs");
+
+// fs.mkdirSync("Hello");
+
+fs.writeFileSync("Hello/abc.txt", "File written\n");
+fs.appendFileSync("Hello/abc.txt", "File Appended");
+
+var data = fs.readFileSync("Hello/abc.txt", "utf-8");
+console.log(data);
+
+fs.renameSync("Hello/abc.txt", "Hello/xyz.txt");
+
+fs.unlinkSync("Hello/xyz.txt");
+
+fs.rmdirSync("Hello");

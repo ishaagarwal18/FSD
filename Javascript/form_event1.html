@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" oninput="this.value=this.value.toUpperCase()"><br/><br/>
+    <input type="text" style="background-color: aqua;" oninput="this.style.backgroundColor=this.style.backgroundColor='lightblue'"><br/><br/>
+    <input type="text" onchange="this.value=this.value.toUpperCase();this.style.backgroundColor='plum'"><br/><br/>    
+    <input type="text" onfocus="this.style.backgroundColor='lightgrey'"><br/><br/>
+    <input type="text" onblur="this.style.backgroundColor='lightpink'"><br/><br/>
+    <form action="#" onsubmit="fun1()">
+        <input type="text" id="demo"><br/><br/>
+        <input type="submit">
+    </form>
+    <script>
+        function fun1(){
+            let a=document.getElementById("demo").value
+            alert("welcome "+a)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/result" method="post">
+        <label>T1</label><input type="number" name="t1"><br>
+        <label>T2</label><input type="number" name="t2"><br>
+        <label>T3</label><input type="number" name="t3"><br>
+        <label>T4</label><input type="number" name="t4"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="/details" method="get">
+        <h1>Employee Details</h1>
+        <label>Name</label><input type="text" name="name"><br><br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br><br>
+        <label>Skills</label>
+        <input type="checkbox" name="skills" value="javascript"> JavaScript
+        <input type="checkbox" name="skills" value="python"> Python
+        <input type="checkbox" name="skills" value="java"> Java<br><br>
+        <label>Department</label>
+        <select>
+            <option name="IT">IT</option>
+            <option name="CST">CST</option>
+            <option name="CSE">CSE</option>
+            <option name="CSE-DS">CSE-DS</option>
+            <option name="MACP">MACP</option>
+        </select>
+    </form>
+</body>
+</html>
