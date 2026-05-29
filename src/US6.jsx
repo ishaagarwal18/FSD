@@ -1,26 +1,24 @@
+//MULTIPLE FORM INPUT FIELD USING A SINGLE STATE object and display a value in real time
 
 import { useState } from "react"
-import img from "./flower.png"
-import img1 from "./flower1.jpg"
-import img2 from "./flower2.png"
-import img3 from "./flower3.jpg"
-import img4 from "./flower4.png"
-import img5 from "./flower5.JPG"
 
-function US6()
+function US7()
 {
-    const arr=[img,img1,img2,img3,img4,img5]
-    const[i,setimage]=useState(arr[0]);
-    function seti()
-    {
-        const ri=Math.floor(Math.random()*arr.length)
-        setimage(arr[ri])
+    const[data,setData]=useState({});
+    function handleChange(e){
+        const{name,value}=e.target;
+        setData({...data,[name]:value});
     }
     return(
         <div>
-            <img src={i}></img>
-            <button onClick={seti}>Click</button>
+            <div>
+                <input type="text" name="firstname" onChange={handleChange}/><br></br>
+                <input type="text" name="lastname" onChange={handleChange}/>
+            </div>
+            <h1>{data.firstname}</h1>
+            <h1>{data.lastname}</h1>
         </div>
     )
 }
-export default US6
+
+export default US7

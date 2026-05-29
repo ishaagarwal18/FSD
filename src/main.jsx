@@ -6,7 +6,8 @@ import './index.css'
 // import Comp2 from './Comp2.jsx'
 // import Comp1 from './Comp1.jsx'
 // import Comp4 from './Comp4.jsx'
-import Notfound from './NotFound.jsx'
+// import Notfound from './NotFound.jsx'
+import US7 from "./US7.jsx"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Comp2 /> */}
     {/* <Comp3 /> */}
     {/* <Comp4 /> */}
-    <Notfound/>
+    <US7/>
+    {/* <Notfound/> */}
   </StrictMode>,
 )
