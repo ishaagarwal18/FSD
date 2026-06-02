@@ -14,8 +14,9 @@ import './index.css'
 // import US5 from "./US5.jsx"
 // import US6 from "./US6.jsx"
 // import US7 from "./US7.jsx"
-import Form1 from './form1.jsx'
-import Practice from './practice.jsx'
+// import Form1 from './form1.jsx'
+// import Practice from './practice.jsx'
+import UR1 from './UR1'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,6 +27,7 @@ createRoot(document.getElementById('root')).render(
     {/* <US7/> */}
     {/* <Notfound/> */}
     {/* <Form1/> */}
-    <Practice/>
+    {/* <Practice/> */}
+    <UR1 />
   </StrictMode>,
 )
