@@ -24,7 +24,8 @@ import './index.css'
 // import Form1 from './form1.jsx'
 // import Practice from './practice.jsx'
 // import UR1 from './UR1'
-import UR2 from './UR2'
+// import UR2 from './UR2'
+import UR3 from './UR3'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -37,7 +38,8 @@ createRoot(document.getElementById('root')).render(
     {/* <Form1/> */}
     {/* <Practice/> */}
     {/* <UR1 /> */}
-    <UR2 />
+    {/* <UR2 /> */}
+    <UR3 />
 
   </StrictMode>,
 )
