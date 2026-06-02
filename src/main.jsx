@@ -14,9 +14,17 @@ import './index.css'
 // import US5 from "./US5.jsx"
 // import US6 from "./US6.jsx"
 // import US7 from "./US7.jsx"
+// import MF1 from "./MF1.jsx"
+// import MF2 from "./MF2.jsx"
+// import MF3 from "./MF3.jsx"
+// import MF4 from "./MF4.jsx"
+// import P1 from "./P1.jsx"
+// import P3 from "./P3.jsx"
+// import P5 from "./P5.jsx"
 // import Form1 from './form1.jsx'
 // import Practice from './practice.jsx'
-import UR1 from './UR1'
+// import UR1 from './UR1'
+import UR2 from './UR2'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -28,6 +36,8 @@ createRoot(document.getElementById('root')).render(
     {/* <Notfound/> */}
     {/* <Form1/> */}
     {/* <Practice/> */}
-    <UR1 />
+    {/* <UR1 /> */}
+    <UR2 />
+
   </StrictMode>,
 )
