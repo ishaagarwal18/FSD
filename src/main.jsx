@@ -26,7 +26,10 @@ import './index.css'
 // import UR1 from './UR1'
 // import UR2 from './UR2'
 // import UR3 from './UR3'
-import PC1 from './PC1.jsx'
+// import PC1 from './PC1.jsx'
+// import PC2 from './PC2.jsx'
+// import PC3 from './PC3.jsx'
+import PC4 from './PC4.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -41,7 +44,10 @@ createRoot(document.getElementById('root')).render(
     {/* <UR1 /> */}
     {/* <UR2 /> */}
     {/* <UR3 /> */}
-    <PC1 />
+    {/* <PC1 /> */}
+    {/* <PC2 /> */}
+    {/* <PC3 /> */}
+    <PC4 />
 
   </StrictMode>,
 )
