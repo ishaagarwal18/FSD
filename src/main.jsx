@@ -1,6 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import PB320 from './PB320'
+import PB319 from './PB319'
+import PB318 from './PB318'
 // import App from './App.jsx'
 // import Comp3 from './Comp3.jsx'
 // import Comp2 from './Comp2.jsx'
@@ -29,25 +32,35 @@ import './index.css'
 // import PC1 from './PC1.jsx'
 // import PC2 from './PC2.jsx'
 // import PC3 from './PC3.jsx'
-import PC4 from './PC4.jsx'
+// import PC4 from './PC4.jsx'
+// import UE1 from './UE1.jsx'
+// import UE2 from './UE2.jsx'
+// import A1 from './A1'
+// import A2 from './A2'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    {/* <Comp1 /> */}
-    {/* <Comp2 /> */}
-    {/* <Comp3 /> */}
-    {/* <Comp4 /> */}
-    {/* <US7/> */}
-    {/* <Notfound/> */}
-    {/* <Form1/> */}
-    {/* <Practice/> */}
-    {/* <UR1 /> */}
-    {/* <UR2 /> */}
-    {/* <UR3 /> */}
-    {/* <PC1 /> */}
-    {/* <PC2 /> */}
-    {/* <PC3 /> */}
-    <PC4 />
-
-  </StrictMode>,
+  // <StrictMode>
+    // {/* <Comp1 /> */}
+    // {/* <Comp2 /> */}
+    // {/* <Comp3 /> */}
+    // {/* <Comp4 /> */}
+    // {/* <US7/> */}
+    // {/* <Notfound/> */}
+    // {/* <Form1/> */}
+    // {/* <Practice/> */}
+    // {/* <UR1 /> */}
+    // {/* <UR2 /> */}
+    // {/* <UR3 /> */}
+    // {/* <PC1 /> */}
+    // {/* <PC2 /> */}
+    // {/* <PC3 /> */}
+    // {/* <PC4 /> */}
+    // <UE1 />
+    // <UE2 />
+    // <A1 />
+    // <A2 />
+    // <PB320 />
+    // <PB319 />
+    <PB318 />
+  // {/* </StrictMode>, */}
 )
