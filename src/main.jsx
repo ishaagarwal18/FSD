@@ -4,6 +4,7 @@ import './index.css'
 import PB320 from './PB320'
 import PB319 from './PB319'
 import PB318 from './PB318'
+import My from './PB317/My'
 // import App from './App.jsx'
 // import Comp3 from './Comp3.jsx'
 // import Comp2 from './Comp2.jsx'
@@ -61,6 +62,7 @@ createRoot(document.getElementById('root')).render(
     // <A2 />
     // <PB320 />
     // <PB319 />
-    <PB318 />
+    // <PB318 />
+    <My/>
   // {/* </StrictMode>, */}
 )
